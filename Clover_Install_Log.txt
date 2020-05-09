@@ -1,0 +1,68 @@
+
+Clover EFI installer log - Thu Apr 16 20:22:59 ADT 2020
+Installer version: r5112 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *1.0 TB     disk0
+   1:                  Apple_HFS Time Machine            1.0 TB     disk0s1
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *256.1 GB   disk1
+   1:                 Apple_APFS Container disk4         255.9 GB   disk1s2
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *480.1 GB   disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                 Apple_APFS Container disk3         479.9 GB   disk2s2
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +479.9 GB   disk3
+                                 Physical Store disk2s2
+   1:                APFS Volume MacSSD - Data           10.9 GB    disk3s1
+   2:                APFS Volume Preboot                 82.4 MB    disk3s2
+   3:                APFS Volume Recovery                528.1 MB   disk3s3
+   4:                APFS Volume VM                      1.1 MB     disk3s4
+   5:                APFS Volume MacSSD                  11.1 GB    disk3s5
+
+/dev/disk4 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +255.9 GB   disk4
+                                 Physical Store disk1s2
+   1:                APFS Volume Data Drive              180.7 GB   disk4s1
+
+/dev/disk5 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk5
+   1:           Windows Recovery                         523.2 MB   disk5s1
+   2:                        EFI NO NAME                 104.9 MB   disk5s2
+   3:         Microsoft Reserved                         16.8 MB    disk5s3
+   4:       Microsoft Basic Data WindowsOS               119.4 GB   disk5s4
+
+/dev/disk6 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *750.2 GB   disk6
+   1:       Microsoft Basic Data WindowsData             750.2 GB   disk6s1
+
+/dev/disk7 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 GB     disk7
+   1:       Microsoft Basic Data EFI                     1.0 GB     disk7s1
+
+Target volume /Volumes/MacSSD on disk3 is APFS on physical store disk2s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacSSD/EFIROOTDIR/EFI folder to /Volumes/MacSSD/EFI-Backups/r5107/2020-04-16-20h22/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
